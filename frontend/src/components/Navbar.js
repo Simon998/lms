@@ -16,29 +16,41 @@ function Navbar() {
               <Link to="/" className="nav-link active">
               Home
               </Link>
-              <Link to="/about" className="nav-link">
+              <Link to="/all-courses" className="nav-link">
               Courses
               </Link>
               <Link to="/about" className="nav-link">
-              Instructors'
+              About us
               </Link>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Instructors
+                  </a>
+                  <ul className="dropdown-menu">
+                    <Link to="/instructor-login" className="dropdown-item"><i class="bi bi-box-arrow-in-left"></i>Instructor
+                    Login
+                    </Link>
+                    <Link to="/instructor-dashboard" className="dropdown-item">
+                    Dashboard
+                    </Link>
+                    <li><a className="dropdown-item" to="/instructor-logout">Logout{' '}<i className="bi bi-box-arrow-right"></i></a></li>
+                  </ul>
+              </li>
+              <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     User
                   </a>
                   <ul className="dropdown-menu">
+                    <Link to="/user-login" className="dropdown-item"><i className="bi bi-box-arrow-in-left"></i>User
+                    Login
+                    </Link>
                     <Link to="/user-dashboard" className="dropdown-item">
                     Dashboard
                     </Link>
-                    <li><a class="dropdown-item" href="#">Logout{' '}<i class="bi bi-box-arrow-right"></i></a></li>
+                    <li><a className="dropdown-item" to="/user-logout">Logout{' '}<i className="bi bi-box-arrow-right"></i></a></li>
                   </ul>
               </li>
-              <Link to="/about" className="nav-link">
-              About us
-              </Link>
-              <Link to="/user-login" className="nav-link"><i class="bi bi-box-arrow-in-left"></i>User
-              Login
-              </Link>
+             
             </div>
           </div>
         </div>

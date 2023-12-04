@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-function Login(){
+function InstructorLogin(){
     return(
         <div className="container mt-4">
             <div className="row">
                 <div className="col-6 offset-3">
                 <div className="card">
-                    <h3 className="card-header">User Login</h3>
+                    <h3 className="card-header">Instructor Login</h3>
                     <div className="card-body">
                         <form>
                             <div className="mb-3">
@@ -24,8 +24,8 @@ function Login(){
                             <button type="submit" className="btn btn-primary">Login</button>
                             <p className="mt-4">
                                 Don't have an account?{' '}
-                                <Link to="/user-register" className="btn btn-primary">
-                                    <i className="bi bi-r-square-fill"></i>User Register
+                                <Link to="/instructor-register" className="btn btn-primary">
+                                    <i className="bi bi-r-square-fill"></i> Instructor Register
                                 </Link>
                             </p>
                         </form>
@@ -37,4 +37,4 @@ function Login(){
     )
 }
 
-export default Login;
+export default InstructorLogin;

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'main',
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
    
 ]
 
@@ -54,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'lms_api.urls'
@@ -137,4 +139,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
     #'DEFAULT_AUTHENTICATION_CLASSES': [
        # 'rest_framework.authentication.TokenAuthentication',
    # ],
+#}
+
+CORS_ALLOW_ALL_ORIGINS = True
+#CORS_ALLOWED_ORIGINS ={
+# "http://localhost:3000/",
 #}

@@ -11,10 +11,10 @@ from rest_framework import permissions
 class InstructorList(generics.ListCreateAPIView):
     queryset=models.Instructor.objects.all()
     serializer_class=InstructorSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
 
 class InstructorDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset=models.Instructor.objects.all()
     serializer_class=InstructorSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
 

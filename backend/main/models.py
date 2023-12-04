@@ -10,7 +10,7 @@ class Instructor(models.Model):
     password = models.CharField(max_length=100)
     qualification = models.CharField(max_length=200)
     mobile_number= models.CharField(max_length=20)
-    address= models.TextField()
+    skills= models.TextField()
 
     class Meta:
         verbose_name_plural = "1. Instructors"
